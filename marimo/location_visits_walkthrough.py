@@ -20,7 +20,7 @@ def _():
     if repo_root_str not in sys.path:
         sys.path.insert(0, repo_root_str)
 
-    from fulcra_demos.location_visits import (
+    from location_visits_logic import (
         build_runs,
         build_segments,
         normalize_location_time_series,
@@ -48,8 +48,8 @@ def _(mo):
     mo.md(r"""
     # Visit Reconstruction from a Shared, Tested Module
 
-    This notebook is the presentation version of the workflow and uses the shared
-    `fulcra_demos.location_visits` module directly.
+        This notebook is the presentation version of the workflow and uses the shared
+        `location_visits_logic.py` module directly.
 
     That matters for two reasons:
 
@@ -232,7 +232,7 @@ def _(
             ),
             "Why this notebook is more trustworthy": mo.md(
                 r"""
-                The transformation logic is imported from the shared `fulcra_demos.location_visits` module.
+                The transformation logic is imported from the shared `location_visits_logic.py` module.
 
                 That same module is also used by the helper script and covered by automated tests.
                 So when we adjust the logic, we can validate it outside the notebook UI as well.

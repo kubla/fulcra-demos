@@ -13,7 +13,7 @@ Repo layout:
 - [notebooks/](notebooks/) contains the legacy Jupyter/Colab `.ipynb` notebooks.
 - [marimo/](marimo/) contains local-first marimo notebook apps.
 - [scripts/](scripts/) contains local CLI helpers.
-- [fulcra_demos/](fulcra_demos/) contains shared Python logic used by scripts, tests, and notebooks.
+- [location_visits_logic.py](location_visits_logic.py) contains shared Python logic used by scripts, tests, and notebooks.
 - [tests/](tests/) contains executable checks for the shared logic.
 
 ## Running locally with marimo
@@ -45,7 +45,7 @@ Recommended notebook for location visits:
 - [marimo/location_visits_walkthrough.py](marimo/location_visits_walkthrough.py)
 
 This notebook uses the shared, tested visit-reconstruction logic from
-[fulcra_demos/location_visits.py](fulcra_demos/location_visits.py) and is the
+[location_visits_logic.py](location_visits_logic.py) and is the
 best current path for understanding or presenting the location-visit workflow.
 
 ## Running the Visits CLI
