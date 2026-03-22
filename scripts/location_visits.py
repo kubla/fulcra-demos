@@ -18,7 +18,7 @@ REPO_ROOT_STR = str(REPO_ROOT)
 if REPO_ROOT_STR not in sys.path:
     sys.path.insert(0, REPO_ROOT_STR)
 
-from location_visits_logic import (
+from scripts.location_visits_logic import (
     build_runs,
     build_segments,
     normalize_location_time_series,

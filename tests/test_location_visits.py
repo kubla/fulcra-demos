@@ -3,7 +3,7 @@ from zoneinfo import ZoneInfo
 
 import pandas as pd
 
-from location_visits_logic import (
+from scripts.location_visits_logic import (
     build_runs,
     build_segments,
     normalize_location_time_series,
