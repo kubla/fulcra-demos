@@ -1,0 +1,18 @@
+[project]
+name = "fulcra-demos"
+version = "0.1.0"
+description = "Local notebooks and demos for the Fulcra API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fulcra-api",
+    "marimo",
+    "matplotlib",
+    "pandas",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]

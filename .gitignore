@@ -1,2 +1,6 @@
 .*.sw?
 __pycache__
+.DS_Store
+.venv/
+__marimo__/
+.pytest_cache/
